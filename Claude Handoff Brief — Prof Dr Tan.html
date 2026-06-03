@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/tktan/Downloads/handoff.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Handoff Brief — Prof Dr Tan</title>
+  <style>
+    body { font-family: monospace; max-width: 860px; margin: 40px auto; padding: 0 20px; background: #0b1628; color: #e0e0e0; line-height: 1.7; }
+    h1 { color: #00c2a8; border-bottom: 2px solid #00c2a8; padding-bottom: 8px; }
+    h2 { color: #f0b429; margin-top: 36px; }
+    h3 { color: #7ecfff; }
+    code { background: #1a2a40; padding: 2px 6px; border-radius: 3px; color: #f0b429; }
+    pre { background: #1a2a40; padding: 14px; border-radius: 6px; overflow-x: auto; color: #e0e0e0; }
+    .tag { display: inline-block; background: #00c2a8; color: #0b1628; font-weight: bold; padding: 2px 8px; border-radius: 3px; font-size: 0.85em; margin-right: 6px; }
+    .warn { background: #2a1a00; border-left: 4px solid #f0b429; padding: 10px 14px; margin: 10px 0; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    .section { border: 1px solid #1e3050; border-radius: 8px; padding: 18px; margin-bottom: 24px; }
+    .updated { color: #888; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+
+<h1>🤖 Claude Handoff Brief</h1>
+<p class="updated">Last updated: 3 June 2026 &nbsp;|&nbsp; Maintained by Prof Dr Tan Teik Kheong</p>
+
+<div class="warn">
+  ⚠️ <strong>Instructions for Claude:</strong> Read this entire page before responding. This is the authoritative project context document. Address the user as <strong>"Professor Dr. Tan"</strong> at all times.
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>1. Who I Am</h2>
+<div class="section">
+  <ul>
+    <li><strong>Name:</strong> Professor Dr. Tan Teik Kheong, PhD alumnus of Asia e University</li>
+    <li><strong>Role:</strong> University instructor based in Singapore (Bishan)</li>
+    <li><strong>Device:</strong> Samsung Galaxy Note 5, communicates frequently via voice-to-text</li>
+    <li><strong>Accessibility:</strong> Eyesight considerations — Claude's text-to-speech in mobile app is important</li>
+    <li><strong>Courses taught:</strong> CP5640, CP2403, CP3405</li>
+    <li><strong>Class size:</strong> ~56 students; groups of ~6–7 using Scrum discipline</li>
+    <li><strong>Financial holdings:</strong> Singapore, Malaysia, and United States — SGD is primary reporting currency</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>2. Standing Conventions (Always Apply)</h2>
+<div class="section">
+  <ul>
+    <li>Always address the user as <strong>"Professor Dr. Tan"</strong></li>
+    <li>ZIP output files must follow: <code>YYMMDD_HHMM_Cl_&lt;brief-description&gt;.zip</code> ("Cl" prefix mandatory)</li>
+    <li>All Word documents for MindManager: strict heading hierarchy H1–H5 (<code>outlineLevel</code> 0–4); no bullets or body text — all details promoted to sub-headings so content appears as branches, not collapsed notes</li>
+    <li>PowerPoint palette: <strong>Navy / Teal / Gold</strong></li>
+    <li>Slides: visually rich, minimal text, detailed per-slide instructor notes</li>
+    <li>CP2403 Quiz 1 logs tagged: <code>[CP2403][Quiz1][Conversations]</code></li>
+    <li>CP2403 Quiz 2 logs tagged: <code>[CP2403][Quiz2][Conversations]</code></li>
+    <li>ThinkScript discussions: associate with dedicated ThinkScript thread/category</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>3. Active Project: CP3405 Team Monitor (PRIORITY)</h2>
+<div class="section">
+  <h3>What it is</h3>
+  <p>A live automated dashboard that monitors 5 student teams' activity across GitHub and Discord for the SmartSeat project (TR2 2026). GitHub Actions runs every hour, fetches data, writes a JSON report. Two websites read from that report.</p>
+
+  <h3>Infrastructure</h3>
+  <ul>
+    <li><strong>Monitor repo:</strong> <code>github.com/ProfDrTan/dt3-monitor</code> — GitHub Actions runs hourly, writes JSON report</li>
+    <li><strong>Site repo:</strong> <code>github.com/ProfDrTan/dt3-tr2-26-market-intelligence</code> — Cloudflare Pages deployment</li>
+    <li><strong>Public URL:</strong> <code>https://dt3-tr2-26-market-intelligence.pages.dev/</code></li>
+    <li><strong>Public leaderboard:</strong> <code>/leaderboard.html</code> — visible to all students</li>
+    <li><strong>Private dashboard:</strong> <code>/status.html</code> — instructor only (more detail)</li>
+    <li><strong>This handoff page:</strong> <code>/handoff.html</code> — the page you are reading now</li>
+  </ul>
+
+  <h3>What the Public Leaderboard Shows (per team)</h3>
+  <ul>
+    <li>GitHub commits + release tag</li>
+    <li>Definition of Done (DoD) progress bar %</li>
+    <li>Discord message count + Active/Low/Silent badge</li>
+    <li>Top 3 contributors by name</li>
+    <li>FigJam board status (Unfilled/Partial/In Progress) — NO open link shown publicly</li>
+    <li>Live ticker: "Updated X mins ago · Next update in ~Y mins"</li>
+  </ul>
+
+  <h3>What the Private Dashboard Adds</h3>
+  <ul>
+    <li>Full message log per Discord channel</li>
+    <li>Non-participant names flagged</li>
+    <li>FigJam links (clickable)</li>
+    <li>DoD item-by-item breakdown</li>
+    <li>Delta since last check</li>
+    <li>GitHub Actions run history</li>
+  </ul>
+
+  <h3>⚡ Current Pending Task</h3>
+  <div class="warn">
+    Add <strong>delta increment display</strong> to the <strong>public leaderboard</strong> (<code>leaderboard.html</code>). 
+    Each team card should show a <strong>+N badge</strong> next to commits and Discord messages, 
+    indicating how much new activity has been added since the last hourly update. 
+    This is visible to all students so they can see peer teams' momentum in real time.
+    <br><br>
+    The delta logic should: store previous snapshot values in <code>localStorage</code>, 
+    compare on each reload/refresh, and render green <code>+N</code> badges inline next to the relevant counters. 
+    If delta is 0, show nothing. If data is from a fresh load with no prior baseline, show nothing.
+  </div>
+
+  <h3>5 Teams</h3>
+  <ul>
+    <li>Team 1, Team 2, Team 3, Team 4, Team 5 — each ~6–7 members</li>
+    <li>Discord channels monitored: one per team + announcements (announcements excluded from public view)</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>4. Active Project: CP5640 Course Materials</h2>
+<div class="section">
+  <ul>
+    <li>23-slide PowerPoint deck based on Jensen Huang's Stanford talk — covers Moore's Law and Dennard Scaling</li>
+    <li>7-slide HD Assessment Guide mapped to A1/A2/A3 rubric criteria</li>
+    <li>Five Jensen Huang principles embedded: first-principles reasoning, co-design, bottleneck identification, open systems thinking, mental model building</li>
+    <li>All slides: Navy/Teal/Gold palette, minimal text, detailed instructor notes</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>5. Active Project: "The AI Infrastructure War" Book</h2>
+<div class="section">
+  <ul>
+    <li>Seven-part MindManager-ready Word document framework (v4)</li>
+    <li>Master citations log (v2) — Chicago Manual of Style</li>
+    <li>Key verified data: Nvidia 2025 revenue $215.9B, Alphabet 136% trailing-year return</li>
+    <li>Covers: Nvidia dominance, Anthropic compute crisis, SpaceX/Colossus 1, Pentagon standoff, quantum stocks (IonQ, D-Wave, Rigetti), Nebius neocloud</li>
+    <li><strong>Status:</strong> Framework complete — next step is writing prose, NOT expanding scope further</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>6. Active Project: Personal Wealth Dashboard</h2>
+<div class="section">
+  <ul>
+    <li>Three interlocking Word documents: wealth dashboard (v1), data extraction audit log (v1), retirement decision framework (v1)</li>
+    <li>Assets across Singapore (CPF), Malaysia (EPF), United States (Social Security)</li>
+    <li>CPF total as of 13 May 2026: SGD 379,042.29</li>
+    <li>Session-locked FX rates: 1 USD = SGD 1.2752 &nbsp;|&nbsp; 1 MYR = SGD 0.3236 — <strong>refresh these in new sessions</strong></li>
+    <li>Covers: CPF LIFE deferral, Social Security sequencing, EPF bridge strategy</li>
+    <li><strong>Note:</strong> Professor Dr. Tan intends to move this into a dedicated Claude Project</li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>7. Tool &amp; Technical Notes for Claude</h2>
+<div class="section">
+  <ul>
+    <li><code>web_fetch</code> on YouTube URLs is blocked — use <code>web_search</code> instead with title keywords</li>
+    <li><code>web_fetch</code> on GitHub raw / Gist URLs is blocked — use Cloudflare Pages URLs instead</li>
+    <li>Direct article URLs (CNN, Motley Fool) work reliably via <code>web_fetch</code></li>
+    <li>Word docs generated via <code>docx</code> npm package in <code>bash_tool</code>, validated with <code>/mnt/skills/public/docx/scripts/office/validate.py</code>, output to <code>/mnt/user-data/outputs/</code></li>
+    <li>Always read relevant <code>SKILL.md</code> files before generating Word, PowerPoint, Excel, or PDF files</li>
+    <li>FX rates: always refresh at start of wealth-related sessions via <code>web_search</code></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<h2>8. How to Continue After Reading This</h2>
+<div class="section">
+  <p>Once you have read this page, confirm to Professor Dr. Tan with one sentence: <em>"I've read the handoff brief and I'm ready to continue."</em> Then ask what he wants to work on, or proceed with the pending task listed in Section 3 if he directs you to do so.</p>
+  <p>Do <strong>not</strong> summarise this document back to him at length — he already knows it. Just confirm and proceed.</p>
+</div>
+
+<hr style="border-color:#1e3050; margin-top:40px;">
+<p class="updated">🔗 This page lives at: <code>https://dt3-tr2-26-market-intelligence.pages.dev/handoff.html</code></p>
+<p class="updated">To update: edit this file in the site GitHub repo and push. Cloudflare deploys automatically within ~60 seconds.</p>
+
+
+
+</body></html>
