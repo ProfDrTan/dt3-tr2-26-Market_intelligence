@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0051)file:///C:/Users/tktan/Downloads/leaderboard_2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>DT3 · Team Status</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="./leaderboard_files/css2" rel="stylesheet">
 <style>
 :root{--navy:#0b1628;--navy2:#111f38;--teal:#00c2a8;--gold:#f0a500;--red:#e8445a;--green:#22c97a;--amber:#f5a623;--card:#1a2a45;--border:rgba(255,255,255,.08);--text:#e8f0f8;--muted:#7a90ab;--mono:'JetBrains Mono',monospace;--sans:'Syne',sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -101,7 +101,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
     </div>
     <div class="pills">
       <span class="pill live">⬤ LIVE</span>
-      <span class="pill" id="time-pill">loading...</span>
+      <span class="pill" id="time-pill">18:46 SGT</span>
     </div>
   </div>
 </header>
@@ -117,33 +117,174 @@ tr:hover td{background:rgba(255,255,255,.02)}
     <div class="hero-chips">
       <div class="chip"><div class="cv">Sun 7 Jun</div><div class="cl">W3 Prediction deadline · midnight SGT</div></div>
       <div class="chip"><div class="cv">Mon 8 Jun</div><div class="cl">Presentations · every role speaks</div></div>
-      <div class="chip"><div class="cv" id="days-chip">--</div><div class="cl">Days remaining</div></div>
+      <div class="chip"><div class="cv" id="days-chip">4d</div><div class="cl">Days remaining</div></div>
     </div>
   </div>
 
-  <div class="ticker" id="ticker">⟳ Loading live data...</div>
+  <div class="ticker" id="ticker">⟳ Just updated -- next automatic refresh in ~60 mins</div>
 
   <div class="spotlight" id="spotlight">
     <div class="spot-card spot-hero">
       <div class="spot-label g">⭐ Most Active Today</div>
-      <div class="spot-name" id="hero-name">Loading...</div>
-      <div class="spot-sub" id="hero-sub">Fetching Discord data...</div>
-      <div class="spot-stat" id="hero-stat"></div>
+      <div class="spot-name" id="hero-name">Team 3</div>
+      <div class="spot-sub" id="hero-sub">45 Discord messages · 6 active members · 165 GitHub commits</div>
+      <div class="spot-stat" id="hero-stat">Top: juninho3 (23) · noah_071127 (10)</div>
     </div>
     <div class="spot-card spot-zero">
       <div class="spot-label r">⚠ Needs to Show Up</div>
-      <div class="spot-name" id="zero-name">Loading...</div>
-      <div class="spot-sub" id="zero-sub">Fetching Discord data...</div>
-      <div class="spot-stat" id="zero-stat"></div>
+      <div class="spot-name" id="zero-name">Team 1</div>
+      <div class="spot-sub" id="zero-sub">1 messages · 49 commits · 73% DoD</div>
+      <div class="spot-stat" id="zero-stat"><span style="color:var(--amber);font-family:var(--mono);font-size:11px">→ Low activity -- needs to pick up</span></div>
     </div>
   </div>
 
   <div class="lb-wrap">
     <div class="lb-head">
       <div class="lb-title">📊 Team Rankings</div>
-      <div class="lb-time" id="report-time">Loading...</div>
+      <div class="lb-time" id="report-time">Thursday 04 June 2026 18:46 SGT</div>
     </div>
-    <div id="table-wrap"><div style="text-align:center;padding:30px;font-family:var(--mono);font-size:11px;color:var(--muted)">⟳ Loading...</div></div>
+    <div id="table-wrap">
+    <table>
+      <thead><tr>
+        <th>#</th><th>Team</th><th>GitHub</th>
+        <th class="hide-m">DoD %</th>
+        <th>Discord</th>
+        <th class="hide-m">Members</th>
+        <th class="hide-m">Top contributors</th>
+        <th class="hide-m">FigJam</th>
+      </tr></thead>
+      <tbody><tr class="">
+      <td><div class="rank">🥇</div></td>
+      <td>
+        <div class="team-name">Team 3</div>
+        <div class="prac-tag">Prac A</div>
+      </td>
+      <td>
+        <div class="commit-num">165</div>
+        <div class="tag-ok">vW22 ✓</div>
+      </td>
+      <td class="hide-m">
+        <div class="dod-wrap">
+          <div class="dod-row"><span>DoD</span><span style="color:var(--amber);font-family:var(--mono)">50%</span></div>
+          <div class="dod-track"><div class="dod-fill" style="width:50%;background:var(--amber)"></div></div>
+          <div style="font-size:9px;color:var(--muted);margin-top:3px">W2 audit</div>
+        </div>
+      </td>
+      <td>
+        <div class="discord-num" style="color:var(--green)">45<span class="delta">+45</span></div>
+        <div style="margin-top:3px"><span class="badge b-active">Active</span></div>
+      </td>
+      <td class="hide-m">
+        <div style="font-family:var(--mono);font-size:12px;color:var(--green)">6 active</div>
+      </td>
+      <td class="hide-m"><div class="contrib"><div class="contrib-top">★ juninho3 <span style="color:var(--teal)">23</span></div><div class="contrib-rest">2· noah_071127 <span style="color:var(--teal)">10</span></div><div class="contrib-rest">3· wangzhiyuan_69008 <span style="color:var(--teal)">6</span></div></div></td>
+      <td class="hide-m"><div style="font-size:11px;color:var(--amber)">Partial</div></td>
+    </tr><tr class="">
+      <td><div class="rank">🥈</div></td>
+      <td>
+        <div class="team-name">Team 2</div>
+        <div class="prac-tag">Prac A</div>
+      </td>
+      <td>
+        <div class="commit-num">105</div>
+        <div class="tag-ok">vW22 ✓</div>
+      </td>
+      <td class="hide-m">
+        <div class="dod-wrap">
+          <div class="dod-row"><span>DoD</span><span style="color:var(--green);font-family:var(--mono)">73%</span></div>
+          <div class="dod-track"><div class="dod-fill" style="width:73%;background:var(--green)"></div></div>
+          <div style="font-size:9px;color:var(--muted);margin-top:3px">W2 audit</div>
+        </div>
+      </td>
+      <td>
+        <div class="discord-num" style="color:var(--green)">25<span class="delta">+25</span></div>
+        <div style="margin-top:3px"><span class="badge b-active">Active</span></div>
+      </td>
+      <td class="hide-m">
+        <div style="font-family:var(--mono);font-size:12px;color:var(--amber)">4 active</div>
+      </td>
+      <td class="hide-m"><div class="contrib"><div class="contrib-top">★ louis1123990 <span style="color:var(--teal)">9</span></div><div class="contrib-rest">2· noobydoo2507 <span style="color:var(--teal)">9</span></div><div class="contrib-rest">3· vileworx <span style="color:var(--teal)">4</span></div></div></td>
+      <td class="hide-m"><div style="font-size:11px;color:var(--amber)">Partial</div></td>
+    </tr><tr class="">
+      <td><div class="rank">🥉</div></td>
+      <td>
+        <div class="team-name">Team 1</div>
+        <div class="prac-tag">Prac A</div>
+      </td>
+      <td>
+        <div class="commit-num">49</div>
+        <div class="tag-ok">vW22 ✓</div>
+      </td>
+      <td class="hide-m">
+        <div class="dod-wrap">
+          <div class="dod-row"><span>DoD</span><span style="color:var(--green);font-family:var(--mono)">73%</span></div>
+          <div class="dod-track"><div class="dod-fill" style="width:73%;background:var(--green)"></div></div>
+          <div style="font-size:9px;color:var(--muted);margin-top:3px">W2 audit</div>
+        </div>
+      </td>
+      <td>
+        <div class="discord-num" style="color:var(--amber)">1<span class="delta">+1</span></div>
+        <div style="margin-top:3px"><span class="badge b-low">Low</span></div>
+      </td>
+      <td class="hide-m">
+        <div style="font-family:var(--mono);font-size:12px;color:var(--red)">0 active</div>
+      </td>
+      <td class="hide-m"><div class="contrib"><div style="color:var(--red);font-size:10px">No activity</div></div></td>
+      <td class="hide-m"><div style="font-size:11px;color:var(--red)">Unfilled</div></td>
+    </tr><tr class="">
+      <td><div class="rank">4</div></td>
+      <td>
+        <div class="team-name">Team 5</div>
+        <div class="prac-tag">Prac B</div>
+      </td>
+      <td>
+        <div class="commit-num">56</div>
+        <div class="tag-bad">No tag ✗</div>
+      </td>
+      <td class="hide-m">
+        <div class="dod-wrap">
+          <div class="dod-row"><span>DoD</span><span style="color:var(--red);font-family:var(--mono)">36%</span></div>
+          <div class="dod-track"><div class="dod-fill" style="width:36%;background:var(--red)"></div></div>
+          <div style="font-size:9px;color:var(--muted);margin-top:3px">W2 audit</div>
+        </div>
+      </td>
+      <td>
+        <div class="discord-num" style="color:var(--amber)">3<span class="delta">+3</span></div>
+        <div style="margin-top:3px"><span class="badge b-low">Low</span></div>
+      </td>
+      <td class="hide-m">
+        <div style="font-family:var(--mono);font-size:12px;color:var(--red)">1 active</div>
+      </td>
+      <td class="hide-m"><div class="contrib"><div class="contrib-top">★ yh03472 <span style="color:var(--teal)">3</span></div></div></td>
+      <td class="hide-m"><div style="font-size:11px;color:var(--red)">Mostly unfilled</div></td>
+    </tr><tr class="">
+      <td><div class="rank">5</div></td>
+      <td>
+        <div class="team-name">Team 4</div>
+        <div class="prac-tag">Prac B</div>
+      </td>
+      <td>
+        <div class="commit-num">42</div>
+        <div class="tag-warn">v1.0.0 ⚠</div>
+      </td>
+      <td class="hide-m">
+        <div class="dod-wrap">
+          <div class="dod-row"><span>DoD</span><span style="color:var(--red);font-family:var(--mono)">45%</span></div>
+          <div class="dod-track"><div class="dod-fill" style="width:45%;background:var(--red)"></div></div>
+          <div style="font-size:9px;color:var(--muted);margin-top:3px">W2 audit</div>
+        </div>
+      </td>
+      <td>
+        <div class="discord-num" style="color:var(--amber)">2<span class="delta">+2</span></div>
+        <div style="margin-top:3px"><span class="badge b-low">Low</span></div>
+      </td>
+      <td class="hide-m">
+        <div style="font-family:var(--mono);font-size:12px;color:var(--amber)">2 active</div>
+      </td>
+      <td class="hide-m"><div class="contrib"><div class="contrib-top">★ amiephyo_23759 <span style="color:var(--teal)">1</span></div><div class="contrib-rest">2· esstarisa <span style="color:var(--teal)">1</span></div></div></td>
+      <td class="hide-m"><div style="font-size:11px;color:var(--teal)">In progress</div></td>
+    </tr></tbody>
+    </table></div>
   </div>
 
   <div class="pressure" id="pressure-box" style="display:none">
@@ -461,5 +602,6 @@ function init(){
 
 init();
 </script>
-</body>
-</html>
+
+
+</body></html>
